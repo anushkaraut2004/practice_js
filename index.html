@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Practise Set JS</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <main>
+    <button class="bag-button" onclick="
+      // alert('Item has been added to Bag')
+       Quantity=Quantity +1;
+      document.querySelector('#cartSummary').innerText = 'Your Bag has '+ Quantity + ' items';">Add to Bag</button>
+    <button class="wish-button" onclick="
+      // alert('Item has been added to the wishlist')
+       Wish += 1 ;
+      document.querySelector('#WishlistSummary').innerText = `Your Wishlist has ${Wish}  items`;">❤️ Wishlist</button>
+    <button class="bag-button" onclick="
+    // alert('Item has been added to Bag');
+       Quantity --;
+    document.querySelector('#cartSummary').innerText='Your Bag has '+ Quantity + ' items';">Remove item</button>
+    <hr>
+    <h2 id="WishlistSummary"></h2>
+    <h2 id="cartSummary"></h2>
+    <hr>
+    <script src="script.js">
+    </script>
+  </main>
+</body>
+</html>
